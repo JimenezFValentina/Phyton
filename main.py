@@ -1,21 +1,15 @@
-num1 = float(input("Ingrese el primer número: "))
-num2 = float(input("Ingrese el segundo número: "))
-operacion = input("Seleccione una operación (+, -, *, /): ")
-
-if operacion == '+':
-    resultado = num1 + num2
-    print(f"Resultado: {resultado:.2f}")
-elif operacion == '-':
-    resultado = num1 - num2
-    print(f"Resultado: {resultado:.2f}")
-elif operacion == '*':
-    resultado = num1 * num2
-    print(f"Resultado: {resultado:.2f}")
-elif operacion == '/':
-    if num2 != 0:
-        resultado = num1 / num2
-        print(f"Resultado: {resultado:.2f}")
-    else:
-        print("Error: No se puede dividir entre cero.")
+numero = int(input("Ingrese el primer número: "))
+if numero % 2 == 0:
+    print ("El numero es par.")
 else:
-    print("Operación no válida.")
+    print ("El numero es impar.")
+
+cantidad = int(input("Cuantos numeros pares desea ver?:"))
+contador= 0
+i = 1
+
+while cantidad > contador :
+   if i % 2 == 0:
+        print ("Par numero", contador + 1, ":",i)
+        contador += 1
+        i += 1
